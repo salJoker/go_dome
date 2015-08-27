@@ -23,41 +23,7 @@ func main(){
 			fmt.Printf("%s is error",args[1])
 		}
 		fmt.Printf("%s",data)
-//		src := args[1]
-//		fmt.Println("src file ",src)
-//		srcf,err := os.Open(src)
-//		if err != nil {
-//			return
-//		}
-//		srcf.Close()
-//
-//		data := make([]byte,1024);
-//		i,err := srcf.Read(data)
-//		fmt.Println(data)
-//		for ;i != 0 && err == nil;{
-//			fmt.Println(data)
-//			i,err = srcf.Read(data)
-//		}
 	}
-
-//	srcFile,err :=  os.Open(args[0])
-//	if err != nil{
-//		fmt.Printf("%s is not file",args[0])
-//		return
-//	}
-//	defer srcFile.Close()
-//
-//	destFile,err := os.Create(args[1])
-//	if err != nil {
-//		fmt.Printf("%s is not file",args[1])
-//		return
-//	}
-//	defer destFile.Close()
-//
-//	if _,err := io.Copy(destFile,srcFile);err!=nil{
-//		fmt.Println(err.Error())
-//		return
-//	}
 }
 
 func ReadFrom(reader io.Reader,num int)([]byte,error){
